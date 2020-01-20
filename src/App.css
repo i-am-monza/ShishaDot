@@ -1,0 +1,339 @@
+/* general element styling */
+h1, h2, h3, h4, h5, h6, label {
+	font-family: Times;
+	color: #00022f;
+}
+
+p {
+	font-family: monospace;;
+}
+
+input, textarea {
+	font-family: 'arial';
+}
+/* end of general element styling */
+
+/* header styling */
+.header {
+	z-index: 9;
+}
+
+.social-links ul {
+	margin: 0;
+	padding: 0;
+}
+
+.social-links i {
+	font-size: 1.5rem !important;
+}
+
+.call i {
+	font-size: 1.2rem !important;
+	color: #007bff !important;
+}
+
+.brandName h1 {
+	text-align: center;
+	font-size: 3rem;
+}
+/* end header styling */
+
+/* main-image styling */
+.main-image {
+	width: 100%;
+	height: 85vh;
+	background-image: url('./assets/images/main-image.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/* end main-image styling */
+
+/* services styling */
+.services span {
+	background: transparent;
+}
+
+.services span h4 {
+	font-size: 3rem;
+	color: whitesmoke;
+	text-decoration-line: underline;
+	text-shadow: 0 2px 3px black;
+	padding: 1rem 0;
+}
+
+#forHeader {
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+
+.services article {
+	transition: all 0.5s;
+	background: white !important;
+	border: solid black;
+}
+
+.services article:nth-child(even) {
+	border-width: 0 0 0.01em 0;
+}
+
+.services article:nth-child(odd) {
+	border-width: 0 0 0 0.01em;
+}
+
+
+.services article img {
+	width: 13em;
+	height: 13em;
+	margin: 2% 6%;
+	border-radius: 10%;
+	box-shadow: 0 0 5px 5px transparent;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.services article img:hover {
+	transform: scale(1.1);
+}
+
+.services article h4 {
+	text-align: center;
+	text-transform: capitalize;
+	text-shadow: 0 2px 2px darkgrey;
+}
+
+.services article p {
+	padding: 2%;
+}
+
+.services article p {
+	padding: 2%;
+}
+
+.services article a {
+	margin-left: 2%;
+}
+/* end services styling */
+
+/* locations styling */
+.locations {
+	margin-top: 5%;
+	z-index: 9;
+	transition: all 1.5s ease-in-out;
+}
+
+.locations h3 {
+	text-align: center;
+	font-size: 2.5rem;
+	transition: all 1.5s ease-in-out;
+}
+
+.locations h4 {
+	font-size: 1.7rem;
+	transition: all 1.5s ease-in-out;
+}
+
+#withHeader {
+	cursor: pointer;
+	text-shadow: 0 2px 2px #00022f;
+	transition: all 1.5s ease-in-out;
+}
+
+#withHeader:hover {
+	text-shadow: 0 2px 2px whitesmoke;
+	text-decoration: underline;
+}
+.withSubHeader {
+	text-shadow: 0 2px 2px darkgrey;
+}
+
+.more-tag {
+	color: #007bff;
+}
+
+.estratweni-image {
+	background-image: url('./assets/images/estratweni.jpg');
+	background-size: cover;
+	background-position: left;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.lesapong-image {
+	background-image: url('./assets/images/lesapong.jpg');
+	background-size: cover;
+	background-position: right;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+/* end of locations styling */
+
+/* team styling */
+.team {
+	background: aliceblue;
+	margin-top: 5%;
+}
+
+.team img {
+	width: 30% !important;
+	height: 30% !important;
+}
+
+.team article {
+	margin-top: 2%;
+}
+
+.team .about {
+	position: relative;
+}
+
+img#aboutImage, div.description {
+	top: 0;
+	justify-content: center;
+}
+
+img#aboutImage {
+	z-index: 9;
+}
+
+div.description {
+	display: none;
+	width: 100%;
+	position: absolute;
+	background: #00022f;
+	color: whitesmoke;
+	padding: 2%;
+	border-radius: 1rem;
+	height: 100%;
+	opacity: 0.8;
+	overflow: hidden scroll;
+	z-index: 1;
+	left: 2%;
+	right: 2%;
+}
+
+div.description h3 {
+	color: whitesmoke;
+}
+
+button#showDescr {
+	border: 0.01em solid #00022f;
+	width: auto;
+	background: transparent;
+	color: #00022f;
+	font-size: 1.3rem;
+	border-radius: 2em;
+	box-shadow: 0 2px 8px darkgrey;
+	text-shadow: 0 1px 1px #00022f;
+	margin: 1%;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+button#showDescr:hover {
+	transform: scale(1.3);
+	color: #007bff;
+	box-shadow: 0 2px 8px #007bff;
+}
+
+.contact {
+	border-radius: 5%;
+	box-shadow: 0 0 4px 2px black;
+}
+
+.team ul {
+	display: inline-flex;
+	list-style: none;
+	background: white;
+}
+
+.team h3#by {
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.team article div h3 {
+	align-self: center;
+	margin: 0 !important;
+}
+
+.team i span {
+	margin-left: 2%;
+	text-decoration: underline;
+	align-self: center;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px){
+	.team i span {
+		display: none;
+	}
+
+	.team h3 {
+		font-size: 20px;
+	}
+}
+/* end team styling */
+
+/* extras styling */
+.extras {
+	background-image: url('./assets/images/img-01.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 2% 0;
+}
+
+.extras img {
+	width: 16em;
+	height: 16em;
+}
+.extras li {
+	color: whitesmoke;
+}
+
+.extras strong {
+	font-family: Times;
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+/* end extras styling */
+
+/* footer styling */
+.footer p {
+	width: 100%;
+	padding: 2% 5%;
+	font-size: 18px;
+	text-align: center;
+}
+
+.footer div h3 {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.footer .row h3 i {
+	margin: 0 2%;
+}
+
+.copy {
+	width: -webkit-fill-available;
+	justify-content: space-between;
+	align-items: center;	
+	background: #00022f;
+	margin-top: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.copyright, .portfolio {
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.copy div {
+	align-self: center;
+}
+/* end footer styling*/
